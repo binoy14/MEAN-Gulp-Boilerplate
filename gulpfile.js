@@ -19,3 +19,9 @@ gulp.task('styles', function(){
 		.pipe(gulp.dest('./dist/styles/'));
 });
 
+gulp.task('clean', function(){
+	return gulp.src('./tmp')
+		.pipe(plugins.clean({read:false}));
+});
+
+gulp.task('default', ['styles','clean']);
