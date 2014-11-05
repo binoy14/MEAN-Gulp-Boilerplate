@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
 	plugins = require('gulp-load-plugins')();
 
-gulp.task('sass', function(){
+gulp.task('styles', function(){
 	return gulp.src([
 			'app/styles/*.scss',
 			'public/styles/sass/*.scss'
@@ -13,9 +13,9 @@ gulp.task('sass', function(){
 			style : 'expanded'
 		}))
 		.pipe(gulp.dest('./tmp'))
-		gulp.start('styles');
+		.pipe(plugins.autoprefixer({browsers : ['last 1 version']}))
+		.pipe(plugins.rename({suffix : '.min'}))
+		.pipe(plugins.minifyCss())
+		.pipe(gulp.dest('./dist/styles/'));
 });
 
-gulp.takk('styles', function(){
-
-});
