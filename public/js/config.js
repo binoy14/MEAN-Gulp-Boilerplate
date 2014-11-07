@@ -1,1 +1,0 @@
-"use strict";angular.module("mean").config(["$stateProvider","$urlRouterProvider",function(e,r){r.otherwise("/"),e.state("home",{url:"/",templateUrl:"views/index.html"})}]),angular.module("mean").config(["$locationProvider",function(e){e.hashPrefix("!")}]);

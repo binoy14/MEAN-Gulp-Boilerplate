@@ -1,1 +1,0 @@
-"use strict";angular.module("mean.system").controller("IndexController",["$scope","Global",function(l,o){l.global=o}]);

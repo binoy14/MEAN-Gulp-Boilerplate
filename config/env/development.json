@@ -1,6 +1,0 @@
-{
-    "db": "mongodb://localhost/mean-dev",
-    "app": {
-        "name": "Gulp Generator - MEAN generator rewrite using Gulp - Development"
-    }
-}

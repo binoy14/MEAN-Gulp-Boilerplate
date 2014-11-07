@@ -1,1 +1,0 @@
-"use strict";angular.element(document).ready(function(){"#_=_"===window.location.hash&&(window.location.hash="#!"),angular.bootstrap(document,["mean"])});
